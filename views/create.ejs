@@ -1,0 +1,18 @@
+
+<%- include('./partials/header') %>
+<%- include('./partials/nav') %>
+
+    <h1>Add A New Book</h1>
+
+    <form style="display: flex; flex-direction: column;
+    align-items: center; justify-content: center; " action="/create" method="post">
+        <input type="text" placeholder="Book Name" name="book"><br><br>
+        <input type="text" placeholder="Auther name Name" name="auther"><br><br>
+        <input type="text" placeholder="Language" name="language"><br><br>
+        <input type="number" placeholder="Book Quantity" name="quntity"><br><br>
+        <input type="Price" placeholder="Book Name" name="price"><br><br>
+        <textarea name="note" placeholder="Enter some detaile about book..."></textarea><br><br>
+        <a href="../views/library.ejs"><button>Submit</button></a>
+    </form>
+
+<%- include('./partials/footer') %>
